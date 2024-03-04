@@ -37,7 +37,8 @@
             outline: none;
             border: none;
             font-weight: bolder;
-            cursor: pointer
+            cursor: pointer;
+            margin: 0 0 20px 0;
         }
     </style>
 </head>
@@ -70,8 +71,8 @@
     <div id="confirmUrlDiv" style="display: none;" class="ctaDiv">
         <div style="position:relative; background-color:white; padding:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25); width: 80vw; display:flex; flex-direction: column; align-items: center;">
             <p id="confirmUrlText" style="text-align: center; width:80%; overflow: hidden; text-overflow: ellipsis;">Are you sure you want to visit url.com?</p>
-                <button onclick="window.open(newUrlString, '_blank').focus(); document.getElementById('confirmUrlDiv').style.display = 'none'">VISIT SITE</button>
-                <button onclick="document.getElementById('confirmUrlDiv').style.display = 'none'">GO BACK</button>
+                <button id="startARButton" onclick="window.open(newUrlString, '_blank').focus(); document.getElementById('confirmUrlDiv').style.display = 'none'">VISIT SITE</button>
+                <button ID="startARButton" onclick="document.getElementById('confirmUrlDiv').style.display = 'none'">GO BACK</button>
         </div>
     </div>
     <div id="errorDiv" class="ctaDiv" style="display: none; background:#aaa">
